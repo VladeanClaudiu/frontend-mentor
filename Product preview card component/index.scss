@@ -3,3 +3,15 @@ $background-color: #f3eae3;
 body {
     background: $background-color;
 }
+
+.component {
+    background: white;
+    display: grid;
+    width: 375px;
+    margin: 10vh auto 0 auto;
+    border-radius: 10px;
+    .hero-image > img{
+        border-radius: 10px 10px 0 0;
+        max-width: 100%;
+    }
+}
