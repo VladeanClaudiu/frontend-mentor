@@ -49,6 +49,7 @@ body {
   color: #6c7289;
   text-align: left;
   line-height: 24px;
+  letter-spacing: .01em;
 }
 
 .component .component-body .component-sale div {
