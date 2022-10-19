@@ -12,9 +12,12 @@ body {
   border-radius: 10px;
 }
 
-.component .hero-image > img {
+.component .hero-image {
+  background-image: url(./images/image-product-mobile.jpg);
   border-radius: 10px 10px 0 0;
-  max-width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 263px;
 }
 
 .component .component-body {
