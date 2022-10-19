@@ -34,6 +34,29 @@ body {
     }
     .component-body {
         margin: 25px 30px 25px 30px;
+        .component-information {
+            h3{
+                font-family: $Montserrat;
+                font-weight: 100;
+                color: $Dark-grayish-blue;
+                font-size: 12px;
+                letter-spacing: 4px;
+                margin-top: 0px;
+            }
+            h1{
+                font-family: $Fraunces;
+                font-weight: 700;
+                color: $Very-dark-blue;
+                font-size: 34px;
+                line-height: 32px;
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+            p{
+                font-family: $Montserrat;
+                font-size: 14px;
+            }
+        }
         .component-sale {
             div{
                 display: flex;

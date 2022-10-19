@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
 body {
-  background: #f3eae3;
+  background: #f2ebe3;
 }
 
 .component {
@@ -20,6 +21,30 @@ body {
   margin: 25px 30px 25px 30px;
 }
 
+.component .component-body .component-information h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  color: #6c7289;
+  font-size: 12px;
+  letter-spacing: 4px;
+  margin-top: 0px;
+}
+
+.component .component-body .component-information h1 {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  color: #1c232b;
+  font-size: 34px;
+  line-height: 32px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.component .component-body .component-information p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
 .component .component-body .component-sale div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,7 +55,7 @@ body {
 }
 
 .component .component-body .component-sale div .sale-price {
-  color: #3d8168;
+  color: #3c8067;
   text-align: left;
 }
 
