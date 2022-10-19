@@ -29,9 +29,12 @@ body {
     width: 375px;
     margin: 10vh auto 0 auto;
     border-radius: 10px;
-    .hero-image > img {
+    .hero-image {
+        background-image: url(./images/image-product-mobile.jpg);
         border-radius: 10px 10px 0 0;
-        max-width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 263px;
     }
     .component-body {
         margin: 25px 30px 25px 30px;
