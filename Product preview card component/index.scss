@@ -1,8 +1,12 @@
-$background-color: #f3eae3;
-$accent-color: #3d8168;
+//colours 
+$Dark-cyan: hsl(158, 36%, 37%);
+$Cream: hsl(30, 38%, 92%);
+$Very-dark-blue: hsl(212, 21%, 14%);
+$Dark-grayish-blue: hsl(228, 12%, 48%);
+$White: hsl(0, 0%, 100%);
 
 body {
-    background: $background-color;
+    background: $Cream;
 }
 
 .component {
@@ -22,7 +26,7 @@ body {
                 display: flex;
                 align-items: center;
                 .sale-price {
-                color: $accent-color;
+                color: $Dark-cyan;
                 text-align: left;
                 }
                 .price {
