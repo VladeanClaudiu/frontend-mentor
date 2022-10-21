@@ -121,6 +121,9 @@ body {
     background-repeat: no-repeat;
     height: 100%;
   }
+  .component .component-body {
+    margin: 30px 30px 25px 20px;
+  }
   .component .component-body .component-sale .add-button {
     background-image: url(./images/icon-cart.svg);
     background-repeat: no-repeat;
