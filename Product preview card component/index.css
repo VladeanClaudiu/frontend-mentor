@@ -105,4 +105,26 @@ body {
   transition: .2s ease-in-out;
   background-color: #214538;
 }
+
+@media (min-width: 1024px) {
+  .component {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    width: 600px;
+  }
+  .component .hero-image {
+    background-image: url(./images/image-product-desktop.jpg);
+    border-radius: 10px 0 0 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+  .component .component-body .component-sale .add-button {
+    background-image: url(./images/icon-cart.svg);
+    background-repeat: no-repeat;
+    background-position: 4em;
+  }
+}
 /*# sourceMappingURL=index.css.map */

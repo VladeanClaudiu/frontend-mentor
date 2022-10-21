@@ -17,8 +17,10 @@ $Fraunces: 'Fraunces', serif;
 
 //The designs were created to the following widths:
 // - Mobile: 375px
-// - Desktop: 1440px
+$screen-lg-min: 1024px;
 
+
+//mobile first design
 body {
     background: $Cream;
 }
@@ -107,6 +109,31 @@ body {
             .add-button:hover{
                 transition: .2s ease-in-out;
                 background-color: $Dark-cyan-active;
+            }
+        }
+    }
+}
+
+//desktop design
+@media (min-width: #{$screen-lg-min}) {
+    .component {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 600px;
+        .hero-image {
+            background-image: url(./images/image-product-desktop.jpg);
+            border-radius: 10px 0 0 10px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 100%;
+        }
+        .component-body{
+            .component-sale {      
+                .add-button {
+                    background-image: url(./images/icon-cart.svg);
+                    background-repeat: no-repeat;
+                    background-position: 4em; 
+                }
             }
         }
     }
