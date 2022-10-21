@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+body {
+  background-color: #1f2632;
+  font-family: "Manrope", sans-serif;
+}
+
+.advice-component {
+  text-align: center;
+  background-color: #323a49;
+  width: 375px;
+  margin: 25vh auto 0 auto;
+  border-radius: 10px;
+}
+
+.advice-component .advice-container {
+  padding: 40px 22px 30px 22px;
+}
+
+.advice-component .advice-container .advide-number {
+  font-size: 12px;
+  color: #52ffa8;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.advice-component .advice-container .advide-quote {
+  font-size: 25px;
+  font-weight: 800;
+  color: #cee3e9;
+  margin-bottom: 25px;
+}
+
+.advice-component .advice-container .break-quote {
+  background-image: url("./images/pattern-divider-mobile.svg");
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  margin-bottom: 20px;
+}
+
+.advice-component .advice-container .advice-button {
+  background-color: #52ffa8;
+  height: 60px;
+  width: 60px;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  background-image: url("./images/icon-dice.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+/*# sourceMappingURL=index.css.map */
