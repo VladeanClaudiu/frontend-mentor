@@ -55,6 +55,7 @@ body {
         }
 
         .advice-button{
+            transition: .2s ease-in-out;
             background-color: $Neon-Green;
             height: 60px;
             width: 60px;
@@ -68,6 +69,12 @@ body {
             left: 0;
             right: 0;
             margin: auto;
+            cursor: pointer;
+        }
+
+        .advice-button:hover {
+            transition: .2s ease-in-out;
+            box-shadow: 0px 0px 20px $Neon-Green;
         }
     }
 }
