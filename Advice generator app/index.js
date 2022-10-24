@@ -7,7 +7,7 @@ async function getAdvice() {
   const data = await res.json();
   console.log(await data);
   adviceNr.innerText = `ADVICE #${data.slip.id}`;
-  adviceQuote.innerText = `"${data.slip.advice}"`;
+  adviceQuote.innerText = `${data.slip.advice}`;
 }
 
 adviceBtn.addEventListener("click", getAdvice);

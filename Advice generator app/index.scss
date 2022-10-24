@@ -32,18 +32,27 @@ body {
     .advice-container {
         padding: 40px 22px 30px 22px;
 
-        .advide-number {
+        .advice-number {
             font-size: 12px;
             color: $Neon-Green;
             letter-spacing: 2px;
             font-weight: 600;
         }
 
-        .advide-quote {
+        .advice-quote {
             font-size: 25px;
             font-weight: 800;
             color: $Light-Cyan;
             margin-bottom: 25px;
+            quotes: "“" "”" "‘" "’";
+        }
+
+        .advice-quote::before {
+            content: open-quote;
+        }
+
+        .advice-quote::after {
+            content: close-quote;
         }
 
         .break-quote {
