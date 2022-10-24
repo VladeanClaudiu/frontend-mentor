@@ -73,4 +73,31 @@ body {
   -webkit-box-shadow: 0px 0px 20px #52ffa8;
           box-shadow: 0px 0px 20px #52ffa8;
 }
+
+@media (min-width: 1024px) {
+  .advice-component {
+    text-align: center;
+    background-color: #323a49;
+    width: 505px;
+    margin: 25vh auto 0 auto;
+    border-radius: 10px;
+  }
+  .advice-component .advice-container {
+    padding: 40px 22px 30px 22px;
+  }
+  .advice-component .advice-container .advice-number {
+    font-size: 12px;
+    color: #52ffa8;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-top: 0;
+  }
+  .advice-component .advice-container .break-quote {
+    background-image: url("./images/pattern-divider-desktop.svg");
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    margin-bottom: 20px;
+  }
+}
 /*# sourceMappingURL=index.css.map */
