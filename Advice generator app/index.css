@@ -18,14 +18,14 @@ body {
 }
 
 .advice-component .advice-container .advice-number {
-  font-size: 12px;
+  font-size: 13px;
   color: #52ffa8;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   font-weight: 600;
 }
 
 .advice-component .advice-container .advice-quote {
-  font-size: 25px;
+  font-size: 28px;
   font-weight: 800;
   color: #cee3e9;
   margin-bottom: 25px;
