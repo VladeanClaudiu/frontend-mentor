@@ -1,0 +1,55 @@
+
+.ham-menu {
+    z-index: 3;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    // display: none; /*hides the hamburger button for the desktop and tablet version of the website*/
+  }
+  
+  .menu-btn_nav {
+    width: 50px;
+    height: 6px;
+    background: rgb(0, 0, 0);
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+
+  .menu-btn_nav::before,
+.menu-btn_nav::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background: rgb(0, 0, 0);
+  border-radius: 2px;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn_nav::before {
+  transform: translateY(-16px);
+}
+
+.menu-btn_nav::after {
+  transform: translateY(16px);
+}
+
+//hamburger button animation
+.ham-menu.open .menu-btn_nav {
+  transform: translateX(-50px);
+  background: transparent;
+}
+
+.ham-menu.open .menu-btn_nav::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.ham-menu.open .menu-btn_nav::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
