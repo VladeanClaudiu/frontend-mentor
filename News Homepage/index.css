@@ -19,9 +19,8 @@
 
 .menu-btn_nav {
   width: 50px;
-  height: 6px;
+  height: 4px;
   background: black;
-  border-radius: 5px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -31,21 +30,20 @@
   content: "";
   position: absolute;
   width: 50px;
-  height: 6px;
+  height: 4px;
   background: black;
-  border-radius: 2px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 .menu-btn_nav::before {
-  -webkit-transform: translateY(-16px);
-          transform: translateY(-16px);
+  -webkit-transform: translateY(-9px);
+          transform: translateY(-9px);
 }
 
 .menu-btn_nav::after {
-  -webkit-transform: translateY(16px);
-          transform: translateY(16px);
+  -webkit-transform: translateY(9px);
+          transform: translateY(9px);
 }
 
 .ham-menu.open .menu-btn_nav {
