@@ -1,5 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+body {
+  background-color: #fffdfa;
+  font-family: "Inter", sans-serif;
+}
+
+.container-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.overlay-on {
+  z-index: 5;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background: rgba(0, 0, 0, 0.5);
+}
+
 .container {
-  margin: 3vh 3vw 0vh 3vw;
+  margin: 1vh 3vw 0vh 3vw;
+}
+
+.container .nav-section img {
+  width: 50px;
+  margin-top: 24px;
 }
 
 .container .nav-section nav {
@@ -7,8 +36,8 @@
   right: 0;
   top: 0;
   height: 100vh;
-  background: #7614f7;
-  width: 60%;
+  background: #fffdfa;
+  width: 70%;
   z-index: 2;
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
@@ -25,10 +54,13 @@
 }
 
 .container .nav-section nav ul a {
-  color: white;
-  padding: 0.75em 2em;
+  color: #00001a;
+  padding: 1em 2em;
   display: block;
   width: 100%;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
 }
 
 .container .nav-section nav ul a:hover {
@@ -49,6 +81,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  float: right;
   width: 80px;
   height: 80px;
   cursor: pointer;

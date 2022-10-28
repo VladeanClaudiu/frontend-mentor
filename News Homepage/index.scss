@@ -1,15 +1,59 @@
+//Font imports
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+//Font Family
+
+$Inter : 'Inter', sans-serif;
+
+//Primary Colours
+
+$Soft-orange: hsl(35, 77%, 62%);
+$Soft-red: hsl(5, 85%, 63%);
+
+//Neutral Colours
+
+$Off-white: hsl(36, 100%, 99%);
+$Grayish-blue: hsl(233, 8%, 79%);
+$Dark-grayish-blue: hsl(236, 13%, 42%);
+$Very-dark-blue: hsl(240, 100%, 5%);
+
+body{
+    background-color: $Off-white;
+    font-family: $Inter;
+}
+
+.container-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;   
+    transition: all 0.5s ease-in-out;
+}
+
+.overlay-on{
+    z-index: 5;
+    transition: all 0.5s ease-in-out;
+    background: rgba(0, 0, 0, 0.5);
+}
 
 .container {
-    margin: 3vh 3vw 0vh 3vw;
+    margin: 1vh 3vw 0vh 3vw;
 
     .nav-section {
+        img {
+            width: 50px;
+            margin-top: 24px;
+        }
+
         nav {
             position: fixed;
             right: 0;
             top: 0;
             height: 100vh;
-            background: #7614f7;
-            width: 60%;
+            background: $Off-white;
+            width: 70%;
             z-index: 2;
             -webkit-transform: translateX(100%);
                     transform: translateX(100%);
@@ -26,10 +70,13 @@
           }
           
           nav ul a {
-            color: white;
-            padding: 0.75em 2em;
+            color: $Very-dark-blue;
+            padding: 1em 2em;
             display: block;
             width: 100%;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 15px;
           }
           
           nav ul a:hover {
@@ -47,6 +94,8 @@
             position: relative;
             display: flex;
             align-items: center;
+            justify-content: flex-end;
+            float: right;
             width: 80px;
             height: 80px;
             cursor: pointer;
