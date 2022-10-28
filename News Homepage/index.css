@@ -1,12 +1,51 @@
-.ham-menu {
+.container {
+  margin: 3vh 3vw 0vh 3vw;
+}
+
+.container .nav-section nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  background: #7614f7;
+  width: 60%;
+  z-index: 2;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.container .nav-section nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 8em;
+}
+
+.container .nav-section nav ul a {
+  color: white;
+  padding: 0.75em 2em;
+  display: block;
+  width: 100%;
+}
+
+.container .nav-section nav ul a:hover {
+  background: #842df7;
+}
+
+.container .nav-section .open-nav {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+
+.container .nav-section .ham-menu {
   z-index: 3;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -17,7 +56,7 @@
   transition: all 0.5s ease-in-out;
 }
 
-.menu-btn_nav {
+.container .nav-section .menu-btn_nav {
   width: 50px;
   height: 4px;
   background: black;
@@ -25,8 +64,8 @@
   transition: all 0.5s ease-in-out;
 }
 
-.menu-btn_nav::before,
-.menu-btn_nav::after {
+.container .nav-section .menu-btn_nav::before,
+.container .nav-section .menu-btn_nav::after {
   content: "";
   position: absolute;
   width: 50px;
@@ -36,28 +75,28 @@
   transition: all 0.5s ease-in-out;
 }
 
-.menu-btn_nav::before {
+.container .nav-section .menu-btn_nav::before {
   -webkit-transform: translateY(-9px);
           transform: translateY(-9px);
 }
 
-.menu-btn_nav::after {
+.container .nav-section .menu-btn_nav::after {
   -webkit-transform: translateY(9px);
           transform: translateY(9px);
 }
 
-.ham-menu.open .menu-btn_nav {
+.container .nav-section .ham-menu.open .menu-btn_nav {
   -webkit-transform: translateX(-50px);
           transform: translateX(-50px);
   background: transparent;
 }
 
-.ham-menu.open .menu-btn_nav::before {
+.container .nav-section .ham-menu.open .menu-btn_nav::before {
   -webkit-transform: rotate(45deg) translate(35px, -35px);
           transform: rotate(45deg) translate(35px, -35px);
 }
 
-.ham-menu.open .menu-btn_nav::after {
+.container .nav-section .ham-menu.open .menu-btn_nav::after {
   -webkit-transform: rotate(-45deg) translate(35px, 35px);
           transform: rotate(-45deg) translate(35px, 35px);
 }

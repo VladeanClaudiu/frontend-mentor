@@ -1,53 +1,98 @@
 
-.ham-menu {
-    z-index: 3;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80px;
-    height: 80px;
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
-    // display: none; /*hides the hamburger button for the desktop and tablet version of the website*/
-  }
-  
-  .menu-btn_nav {
-    width: 50px;
-    height: 4px;
-    background: rgb(0, 0, 0);
-    transition: all 0.5s ease-in-out;
-  }
-  
+.container {
+    margin: 3vh 3vw 0vh 3vw;
 
-  .menu-btn_nav::before,
-.menu-btn_nav::after {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 4px;
-  background: rgb(0, 0, 0);
-  transition: all 0.5s ease-in-out;
+    .nav-section {
+        nav {
+            position: fixed;
+            right: 0;
+            top: 0;
+            height: 100vh;
+            background: #7614f7;
+            width: 60%;
+            z-index: 2;
+            -webkit-transform: translateX(100%);
+                    transform: translateX(100%);
+            -webkit-transition: -webkit-transform 0.5s ease-in-out;
+            transition: -webkit-transform 0.5s ease-in-out;
+            transition: transform 0.5s ease-in-out;
+            transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 8em;
+          }
+          
+          nav ul a {
+            color: white;
+            padding: 0.75em 2em;
+            display: block;
+            width: 100%;
+          }
+          
+          nav ul a:hover {
+            background: #842df7;
+          }
+          
+          .open-nav {
+            -webkit-transform: translateX(0%);
+                    transform: translateX(0%);
+          }
+
+        //mobile nav hamburger button code
+        .ham-menu {
+            z-index: 3;
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 80px;
+            height: 80px;
+            cursor: pointer;
+            transition: all 0.5s ease-in-out;
+            // display: none; /*hides the hamburger button for the desktop and tablet version of the website*/
+        }
+          
+        .menu-btn_nav {
+        width: 50px;
+        height: 4px;
+        background: rgb(0, 0, 0);
+        transition: all 0.5s ease-in-out;
+        }
+          
+        
+        .menu-btn_nav::before,
+        .menu-btn_nav::after {
+          content: "";
+          position: absolute;
+          width: 50px;
+          height: 4px;
+          background: rgb(0, 0, 0);
+          transition: all 0.5s ease-in-out;
+        }
+        
+        .menu-btn_nav::before {
+          transform: translateY(-9px);
+        }
+        
+        .menu-btn_nav::after {
+          transform: translateY(9px);
+        }
+        
+        //hamburger button animation
+        .ham-menu.open .menu-btn_nav {
+          transform: translateX(-50px);
+          background: transparent;
+        }
+        
+        .ham-menu.open .menu-btn_nav::before {
+          transform: rotate(45deg) translate(35px, -35px);
+        }
+        
+        .ham-menu.open .menu-btn_nav::after {
+          transform: rotate(-45deg) translate(35px, 35px);
+        }
+    }
 }
 
-.menu-btn_nav::before {
-  transform: translateY(-9px);
-}
-
-.menu-btn_nav::after {
-  transform: translateY(9px);
-}
-
-//hamburger button animation
-.ham-menu.open .menu-btn_nav {
-  transform: translateX(-50px);
-  background: transparent;
-}
-
-.ham-menu.open .menu-btn_nav::before {
-  transform: rotate(45deg) translate(35px, -35px);
-}
-
-.ham-menu.open .menu-btn_nav::after {
-  transform: rotate(-45deg) translate(35px, 35px);
-}
