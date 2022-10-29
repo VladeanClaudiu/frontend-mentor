@@ -17,28 +17,13 @@ $Grayish-blue: hsl(233, 8%, 79%);
 $Dark-grayish-blue: hsl(236, 13%, 42%);
 $Very-dark-blue: hsl(240, 100%, 5%);
 
-body{
+body {
     background-color: $Off-white;
     font-family: $Inter;
 }
 
-.container-overlay {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 5;   
-    transition: all 0.5s ease-in-out;
-}
-
-.overlay-on{
-    z-index: 5;
-    transition: all 0.5s ease-in-out;
-    background: rgba(0, 0, 0, 0.5);
-}
-
 .container {
+
     margin: 1vh 3vw 0vh 3vw;
 
     .nav-section {
@@ -53,7 +38,7 @@ body{
             top: 0;
             height: 100vh;
             background: $Off-white;
-            width: 70%;
+            width: 68%;
             z-index: 2;
             -webkit-transform: translateX(100%);
                     transform: translateX(100%);
@@ -76,11 +61,13 @@ body{
             width: 100%;
             text-decoration: none;
             font-weight: 400;
-            font-size: 20px;
+            font-size: 1.2em;
+            transition: .2s ease-in-out;
           }
           
           nav ul a:hover {
-            background: #842df7;
+            transition: .2s ease-in-out;
+            color: $Soft-red;
           }
           
           .open-nav {
@@ -143,5 +130,92 @@ body{
           transform: rotate(-45deg) translate(35px, 35px);
         }
     }
+
+    .main-section {
+      // this section is in charge of the background overlay when the mobile navbar is active
+      .container-overlay {
+        z-index: 1;
+        visibility: hidden;
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 5;  
+        transition: .5s ease-in-out; 
+    }
+    
+    .overlay-on {
+        visibility: visible;
+        z-index: 1;
+        transition: transform 0.5s ease-in-out;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    //this section is in charge of the main content on the webpage
+
+    .main-article {
+      margin-bottom: 4em;
+
+      h1{
+        font-size: 2.4em;
+        font-weight: 800;
+        margin: .5em 0 .3em 0;
+      }
+
+      .article-info {
+
+        .article-para {
+          font-size: .9em;
+          line-height: 1.6em;
+          color: $Dark-grayish-blue;
+        }
+
+        .article-read-more-button {
+          color: $Off-white;
+          background-color: $Soft-red;
+          border: none;
+          padding: 1.3em 3em 1.3em 3em;
+          font-weight: 700;
+          letter-spacing: .2em;
+          font-size: .8em;
+        }
+      }
+    }
+
+    .new-sidebar {
+      background-color: $Very-dark-blue;
+      padding: 1em;
+
+      h2 {
+       color: $Soft-orange; 
+       margin: 0;
+       font-weight: 700;
+       font-size: 2em;
+      }
+
+      .new-article { 
+
+        h4 {
+          color: $Off-white;
+          font-size: 1.3em;
+        }
+
+        p {
+          color: $Grayish-blue;
+          font-size: 1em;
+          line-height: 1.7em;
+          margin-bottom: 1.8em;
+          font-weight: 400;
+        }
+      }
+
+      .article-bottom-div {
+        border-bottom: 1px solid $Dark-grayish-blue;
+      }
+    }
+
+    }
+
 }
 
