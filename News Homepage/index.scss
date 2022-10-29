@@ -167,8 +167,9 @@ body {
 
         .article-para {
           font-size: .9em;
-          line-height: 1.6em;
+          line-height: 1.7em;
           color: $Dark-grayish-blue;
+          margin-bottom: 2em;
         }
 
         .article-read-more-button {
@@ -183,13 +184,16 @@ body {
       }
     }
 
+
+    //this  section is in charge of the sidebar New story section
+
     .new-sidebar {
       background-color: $Very-dark-blue;
       padding: 1em;
 
       h2 {
        color: $Soft-orange; 
-       margin: 0;
+       margin: 0 0 1em 0;
        font-weight: 700;
        font-size: 2em;
       }
@@ -199,19 +203,62 @@ body {
         h4 {
           color: $Off-white;
           font-size: 1.3em;
+          margin: 1.8em 0 .2em 0;
         }
 
         p {
           color: $Grayish-blue;
           font-size: 1em;
           line-height: 1.7em;
-          margin-bottom: 1.8em;
+          margin-bottom: 1.5em;
           font-weight: 400;
         }
       }
 
       .article-bottom-div {
         border-bottom: 1px solid $Dark-grayish-blue;
+      }
+    }
+
+    .numbered-stories {
+      margin-top: 4em;
+      display: grid;
+      gap: 1.5em;
+
+      .story {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 1.5em;
+
+        picture {
+          grid-column: 1/2;
+          img {
+            width: 100%;
+          }
+        }
+
+        div {
+          grid-column: 2/4;
+          
+          h5 {
+            margin: 0;
+            font-size: 2em;
+            color: $Grayish-blue;
+          }
+
+          h6 {
+            margin: .6em 0 0 0;
+            font-size: 1em;
+            color: $Very-dark-blue;
+            font-weight: 800;
+          }
+
+          p {
+            color: $Dark-grayish-blue;
+            font-size: .9em;
+            line-height: 1.9em;
+          }
+        }
       }
     }
 
