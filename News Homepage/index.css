@@ -176,6 +176,15 @@ body {
   font-weight: 700;
   letter-spacing: .25em;
   font-size: 1em;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.container .main-section .main-article .article-info .article-read-more-button:hover {
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  background-color: #00001a;
+  cursor: pointer;
 }
 
 .container .main-section .new-sidebar {
@@ -194,6 +203,15 @@ body {
   color: #fffdfa;
   font-size: 1.3em;
   margin: 1.8em 0 .2em 0;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.container .main-section .new-sidebar .new-article h4:hover {
+  color: #e9ab53;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  cursor: pointer;
 }
 
 .container .main-section .new-sidebar .new-article p {
@@ -223,6 +241,7 @@ body {
   -webkit-column-gap: 1.5em;
           column-gap: 1.5em;
   height: 140px;
+  margin-bottom: 1em;
 }
 
 .container .main-section .numbered-stories .story picture {
@@ -232,7 +251,7 @@ body {
 }
 
 .container .main-section .numbered-stories .story picture img {
-  width: 100%;
+  height: 140px;
 }
 
 .container .main-section .numbered-stories .story div {
@@ -252,6 +271,15 @@ body {
   font-size: 1.1em;
   color: #00001a;
   font-weight: 800;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.container .main-section .numbered-stories .story div h6:hover {
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  cursor: pointer;
+  color: #f15e50;
 }
 
 .container .main-section .numbered-stories .story div p {
@@ -263,7 +291,7 @@ body {
 
 @media (min-width: 1024px) {
   .container {
-    margin: 4vh 3vw 0vh 3vw;
+    margin: 4vh 10vw 0vh 10vw;
   }
   .container .nav-section {
     margin-bottom: 3em;
