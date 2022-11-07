@@ -260,4 +260,56 @@ body {
   font-size: .9em;
   line-height: 1.6em;
 }
+
+@media (min-width: 1024px) {
+  .container {
+    margin: 4vh 3vw 0vh 3vw;
+  }
+  .container .nav-section {
+    margin-bottom: 3em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .nav-section img {
+    width: 70px;
+    height: 50px;
+    margin: 0;
+  }
+  .container .nav-section nav {
+    max-width: 60%;
+    display: contents;
+  }
+  .container .nav-section nav ul {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+  }
+  .container .nav-section nav ul a {
+    color: #00001a;
+    padding: 0 0 0 1.6em;
+    width: 100%;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.2em;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+  }
+  .container .nav-section nav ul a:hover {
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    color: #f15e50;
+  }
+  .container .nav-section .ham-menu {
+    display: none;
+  }
+}
 /*# sourceMappingURL=index.css.map */

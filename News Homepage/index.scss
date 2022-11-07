@@ -17,6 +17,10 @@ $Grayish-blue: hsl(233, 8%, 79%);
 $Dark-grayish-blue: hsl(236, 13%, 42%);
 $Very-dark-blue: hsl(240, 100%, 5%);
 
+//The designs were created to the following widths:
+// - Mobile: 375px
+$screen-lg-min: 1024px;
+
 body {
     background-color: $Off-white;
     font-family: $Inter;
@@ -269,6 +273,64 @@ body {
     }
 
     }
+
+}
+
+@media (min-width: #{$screen-lg-min}) {
+  .container {
+    margin: 4vh 3vw 0vh 3vw;
+  
+    .nav-section {
+      margin-bottom: 3em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      img {
+          width: 70px;
+          height: 50px;
+          margin: 0;
+      }
+
+      nav {
+          max-width: 60%;
+          display: contents;
+        
+      }
+
+      nav ul {
+          margin: 0;
+          display: flex;
+          padding: 0;
+        }
+        
+        nav ul a {
+          color: $Very-dark-blue;
+          padding: 0 0 0 1.6em;
+          width: 100%;
+          text-decoration: none;
+          font-weight: 400;
+          font-size: 1.2em;
+          transition: .2s ease-in-out;
+        }
+        
+        nav ul a:hover {
+          transition: .2s ease-in-out;
+          color: $Soft-red;
+        }
+
+        
+      
+
+      //mobile nav hamburger button code
+      .ham-menu {
+          display: none;
+          // display: none; /*hides the hamburger button for the desktop and tablet version of the website*/
+      }
+        
+      
+    }
+  }
 
 }
 
