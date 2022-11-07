@@ -8,6 +8,10 @@ body {
   margin: 1vh 3vw 0vh 3vw;
 }
 
+.container .nav-section {
+  margin-bottom: 2em;
+}
+
 .container .nav-section img {
   width: 50px;
   margin-top: 24px;
@@ -151,13 +155,14 @@ body {
 }
 
 .container .main-section .main-article h1 {
-  font-size: 2.4em;
+  font-size: 3em;
   font-weight: 800;
+  line-height: 100%;
   margin: .5em 0 .3em 0;
 }
 
 .container .main-section .main-article .article-info .article-para {
-  font-size: .9em;
+  font-size: 1.04em;
   line-height: 1.7em;
   color: #5d5f79;
   margin-bottom: 2em;
@@ -167,10 +172,10 @@ body {
   color: #fffdfa;
   background-color: #f15e50;
   border: none;
-  padding: 1.3em 3em 1.3em 3em;
+  padding: 1.6em 4em 1.6em 4em;
   font-weight: 700;
-  letter-spacing: .2em;
-  font-size: .8em;
+  letter-spacing: .25em;
+  font-size: 1em;
 }
 
 .container .main-section .new-sidebar {
@@ -180,7 +185,7 @@ body {
 
 .container .main-section .new-sidebar h2 {
   color: #e9ab53;
-  margin: 0 0 1em 0;
+  margin: .5em 0 1em 0;
   font-weight: 700;
   font-size: 2em;
 }
@@ -217,6 +222,7 @@ body {
       grid-template-columns: 1fr 1fr 1fr;
   -webkit-column-gap: 1.5em;
           column-gap: 1.5em;
+  height: 140px;
 }
 
 .container .main-section .numbered-stories .story picture {

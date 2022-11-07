@@ -23,10 +23,11 @@ body {
 }
 
 .container {
-
     margin: 1vh 3vw 0vh 3vw;
 
     .nav-section {
+        margin-bottom: 2em;
+
         img {
             width: 50px;
             margin-top: 24px;
@@ -158,15 +159,16 @@ body {
       margin-bottom: 4em;
 
       h1{
-        font-size: 2.4em;
+        font-size: 3em;
         font-weight: 800;
+        line-height: 100%;
         margin: .5em 0 .3em 0;
       }
 
       .article-info {
 
         .article-para {
-          font-size: .9em;
+          font-size: 1.04em;
           line-height: 1.7em;
           color: $Dark-grayish-blue;
           margin-bottom: 2em;
@@ -176,10 +178,10 @@ body {
           color: $Off-white;
           background-color: $Soft-red;
           border: none;
-          padding: 1.3em 3em 1.3em 3em;
+          padding: 1.6em 4em 1.6em 4em;
           font-weight: 700;
-          letter-spacing: .2em;
-          font-size: .8em;
+          letter-spacing: .25em;
+          font-size: 1em;
         }
       }
     }
@@ -193,7 +195,7 @@ body {
 
       h2 {
        color: $Soft-orange; 
-       margin: 0 0 1em 0;
+       margin: .5em 0 1em 0;
        font-weight: 700;
        font-size: 2em;
       }
@@ -231,6 +233,7 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 1.5em;
+        height: 140px;
 
         picture {
           grid-column: 1/2;
