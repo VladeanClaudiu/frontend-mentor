@@ -368,6 +368,11 @@ body {
         }
       }
 
+      .new-sidebar {
+        width: 345px;
+        grid-column-end: 4;
+      }
+
       .numbered-stories {
         grid-column: 1/4;
         display: grid;
