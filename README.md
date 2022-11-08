@@ -45,6 +45,6 @@ Your users should be able to:
 - Built with  HTML, SASS and JavaScript
 - Style files provided by Frontend Mentor
 - Designed by Frontend Mentor
-> [Live View](https://frontend-mentor-advice-app-six.vercel.app/)
+> [Live View](https://frontend-mentor-news-homepage.vercel.app/)
 
 
