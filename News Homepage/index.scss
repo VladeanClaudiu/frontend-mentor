@@ -360,6 +360,10 @@ body {
       column-gap: 2em;
       align-items: start;
 
+      .container-overlay{
+        display: none;
+      }
+
       .main-article {
         grid-column: 1/3;
         grid-row: 1/3;

@@ -352,6 +352,9 @@ body {
         -ms-flex-align: start;
             align-items: start;
   }
+  .container .main-section .container-overlay {
+    display: none;
+  }
   .container .main-section .main-article {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
