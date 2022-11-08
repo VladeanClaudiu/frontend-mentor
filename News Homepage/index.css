@@ -291,7 +291,7 @@ body {
 
 @media (min-width: 1024px) {
   .container {
-    margin: 4vh 8vw 0vh 8vw;
+    margin: 7vh 8vw 0vh 8vw;
   }
   .container .nav-section {
     margin-bottom: 3em;
@@ -322,7 +322,7 @@ body {
     padding: 0;
   }
   .container .nav-section nav ul a {
-    color: #00001a;
+    color: #5d5f79;
     padding: 0 0 0 1.6em;
     width: 100%;
     text-decoration: none;
@@ -362,6 +362,9 @@ body {
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+  }
+  .container .main-section .main-article h1 {
+    font-size: 4em;
   }
   .container .main-section .main-article picture {
     -ms-grid-column: 1;
