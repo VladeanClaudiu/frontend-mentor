@@ -9,7 +9,7 @@ Your users should be able to:
 - View the optimal layout depending on their device's screen size
 - See hover and focus states for interactive elements
 
-#Tools Used
+# Tools Used
 - Built with SASS & HTML
 - Style files provided by Frontend Mentor
 - Designed by Frontend Mentor
@@ -25,7 +25,7 @@ Your users should be able to:
 - See hover states for all interactive elements on the page
 - Generate a new piece of advice by clicking the dice icon
 
-#Tools Used
+# Tools Used
 - Built with  HTML, SASS and JavaScript
 - Style files provided by Frontend Mentor
 - Designed by Frontend Mentor
@@ -41,7 +41,7 @@ Your users should be able to:
 - See hover and focus states for all interactive elements on the page
 - **Bonus**: Toggle the mobile menu (requires some JavaScript)
 
-#Tools Used
+# Tools Used
 - Built with  HTML, SASS and JavaScript
 - Style files provided by Frontend Mentor
 - Designed by Frontend Mentor
