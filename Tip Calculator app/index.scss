@@ -35,14 +35,14 @@ body {
         padding: 30px;
         border-radius: 20px 20px 0 0;
 
+        .headings {
+            margin-bottom: 5px;
+            color: $Dark-Grayish-Cyan;
+        }
+        
         .main-tip {
             grid-column: 1/3;
-
-            p {
-                margin-bottom: 5px;
-                color: $Dark-Grayish-Cyan;
-            }
-            
+ 
             .bill-input {
                 border: none;
                 background-color: $Very-Light-Grayish-Cyan;
