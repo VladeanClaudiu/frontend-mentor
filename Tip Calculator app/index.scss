@@ -38,10 +38,12 @@ body {
         .headings {
             margin-bottom: 5px;
             color: $Dark-Grayish-Cyan;
+            margin-bottom: 10px;
         }
 
         .main-tip {
             grid-column: 1/3;
+            margin-bottom: 20px;
  
             .bill-input {
                 border: none;
@@ -62,6 +64,7 @@ body {
 
         .main-select-tip {
             grid-column: 1/3;
+            margin-bottom: 20px;
 
             .tip-selections {
                 display: grid;
@@ -97,6 +100,7 @@ body {
 
         .main-number-people {
             grid-column: 1/3;  
+            margin-bottom: 20px;
             
             .people-input{
                 border: none;
