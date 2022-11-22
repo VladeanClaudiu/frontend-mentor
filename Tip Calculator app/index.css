@@ -87,4 +87,25 @@ body {
   text-indent: 10px;
   direction: rtl;
 }
+
+.container .main-app .main-number-people {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+}
+
+.container .main-app .main-number-people .people-input {
+  border: none;
+  background-color: #f4fafa;
+  font-size: 24px;
+  text-align: right;
+  font-family: "Space Mono", monospace;
+  color: #00494d;
+  background-image: url(./images/icon-person.svg);
+  background-repeat: no-repeat;
+  background-position: 20px center;
+  width: 100%;
+  text-indent: 10px;
+  direction: rtl;
+}
 /*# sourceMappingURL=index.css.map */
