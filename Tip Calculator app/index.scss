@@ -49,12 +49,14 @@ body {
                 font-size: 24px;
                 text-align:right;
                 font-family: $Space-Mono;
-                padding-right: 20px;
                 color: $Very-Dark-Cyan;
                 background-image: url(./images/icon-dollar.svg);
                 background-repeat: no-repeat;
                 background-position: 20px center;
                 width: 100%;
+                // direction and indentation used to add space to the text inside the input from the right
+                text-indent: 10px;
+                direction:rtl;
             }
         }
 
@@ -86,6 +88,9 @@ body {
                     color: $Very-Dark-Cyan;
                     border-radius: 5px;
                     width: 100%;
+                    // direction and indentation used to add space to the text inside the input from the right
+                    text-indent: 10px;
+                    direction:rtl;
                 }
             }
         }

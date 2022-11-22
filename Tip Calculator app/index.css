@@ -41,12 +41,13 @@ body {
   font-size: 24px;
   text-align: right;
   font-family: "Space Mono", monospace;
-  padding-right: 20px;
   color: #00494d;
   background-image: url(./images/icon-dollar.svg);
   background-repeat: no-repeat;
   background-position: 20px center;
   width: 100%;
+  text-indent: 10px;
+  direction: rtl;
 }
 
 .container .main-app .main-select-tip {
@@ -83,5 +84,7 @@ body {
   color: #00494d;
   border-radius: 5px;
   width: 100%;
+  text-indent: 10px;
+  direction: rtl;
 }
 /*# sourceMappingURL=index.css.map */
